@@ -1,4 +1,4 @@
-import pygame  # type: ignore
+import pygame
 
 class Button:
     """A clickable button with image scaling, hover effect, and click detection."""

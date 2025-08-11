@@ -1,14 +1,12 @@
-import pygame  # type: ignore
-
-# Folder path for weapon assets
-WEAPONS_PATH="assets/images/weapons/"
+import pygame  
+from assets import images # Centralized asset import
 
 # Shuriken class to handle its behavior and rendering
 class Shuriken:
     def __init__(self, x, y, facing_right,damage=10):
         
         # Load the Small shuriken image
-        self.original_image = pygame.image.load(WEAPONS_PATH + "shur2.png").convert_alpha()
+        self.original_image = images["small_shuriken"]
         
         self.damage = damage  # 💥 damage on hit
         # Starting angle
@@ -20,7 +18,6 @@ class Shuriken:
         
         # Set its speed (move right or left depending on player direction)
         self.speed = 10 if facing_right  else -10
-    
         self.facing_right = facing_right # Remember the direction it's going
         self.active = True # This is used to check if it should still be on screen
         
@@ -42,7 +39,7 @@ class Shuriken:
 
         # If it goes off screen, mark it as inactive
         if self.x < -50 or self.x > 1050:
-            self.active = False
+             self.active = False
 
     def draw(self, surface):
         # Draw the spinning shuriken
