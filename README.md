@@ -15,11 +15,33 @@
 
 ---
 
+## 📚 Table of Contents
+
+- [Game Features](#-game-features)
+- [Screenshots](#-screenshots)
+- [Tech Stack](#-tech-stack)
+- [Project Structure](#-project-structure)
+- [Setup & Installation](#-setup--installation)
+- [Build Executable](#-build-executable-windows)
+- [Future Plans](#-future-plans)
+- [License](#-license)
+- [Disclaimer](#-disclaimer)
+- [Show Your Support](#-show-your-support)
+- [Contributing](#-contributing)
+- [External Resources](#-external-resources)
+- [Developer](#-developer)
+
+---
+
 ## 🎮 Game Features
 
 - 🧍‍♂️ **Playable Characters**: Naruto (Player) vs Sasuke (Enemy)
 - 🎞️ **Smooth Animations**: Idle, Run, Jump, Attack, Damage, Defeated, Victory
+- 🛡️ **Block System**: Player can block attacks (up to 2 consecutive blocks)
 - 🗡️ **Shuriken Combat**: Throwing projectiles with effects
+- 💥 **Damage System**: Small and big shuriken cause different damage animations
+- ⚰️ **Defeat Animation**: Unique falling + stepping back + ground-sink animation
+- 🧠 **Smart AI**: Sasuke blocks automatically after hit and resets on next throw
 - ❤️ **Health Bars** with Character Head Icons
 - 🎵 **Sound Effects**: Click, Hit, Jump, Block, Background Music
 - ⏸️ **Pause Menu**: Resume, Restart, Exit, Home Navigation
@@ -72,8 +94,9 @@
     │ │ ├── ui/ → UI elements (buttons, banners, icons)
     │ │ ├── weapons/ → Shuriken sprites
     │ │ └── characters/ → Naruto & Sasuke animations
-    │ └── sounds/ → Game sound effects & music
-    │
+    │ ├── sounds/ → Game sound effects & music
+    │ └── Icon.ico → Game Icon for Executable file
+    │  
     ├── src/
     │ ├── main.py → Game entry point
     │ ├── battle.py → Handles combat logic
@@ -126,6 +149,41 @@ python main.py
 
 ---
 
+## 🧪 Build Executable (Windows)
+You can generate a Windows `.exe` using [PyInstaller](https://pyinstaller.org/):
+
+
+#### ✅ 1. Install PyInstaller
+Make sure you're in your virtual environment (optional but recommended):
+
+```bash
+pip install pyinstaller
+```
+#### ✅ 2. Navigate to the src Folder
+The main.py file is inside src/, so:
+
+```bash
+cd src
+```
+#### ✅ 3. Run PyInstaller Command
+
+```bash
+python -m PyInstaller --onefile --windowed --icon=../assets/Icon.ico --add-data "../assets;assets" --name Shinobi-Saga main.py
+```
+
+#### ✅ 4. After Build Completes...
+PyInstaller creates these folders:
+
+    dist/         --> Contains your final .exe
+    build/        --> Temporary files (you can delete this later)
+    ShinobiSaga.spec --> Build specification file
+
+Your .exe will be located in:
+
+    /src/dist/ShinobiSaga.exe
+
+---
+
 ## 🚀 Future Plans
 
  - 🧑‍🎨 Character Selection Screen
@@ -143,6 +201,12 @@ python main.py
 ## 📄 License
 
 This project is licensed under the [MIT License](LICENSE).
+This game is for **educational and non-commercial** use only.
+
+---
+
+## Disclaimer
+This project is a fan-made tribute inspired by the Naruto anime and manga series. All intellectual property relating to Naruto belongs to its respective owners (Shueisha, TV Tokyo, Studio Pierrot, etc.). This game is developed for educational and non-commercial purposes only. No copyright infringement is intended.
 
 ---
 
@@ -162,6 +226,14 @@ This project is licensed under the [MIT License](LICENSE).
 
 Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.  
 Make sure to follow best practices and test your changes.
+
+---
+
+## 🔗 External Resources
+
+- [PyInstaller Docs](https://pyinstaller.org/)
+- [Pygame Docs](https://www.pygame.org/docs/)
+- [Naruto Wiki](https://naruto.fandom.com/)
 
 ---
 
