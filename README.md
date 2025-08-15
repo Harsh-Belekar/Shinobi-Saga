@@ -12,6 +12,8 @@
 ![Pygame](https://img.shields.io/badge/Pygame-2.5.2-orange?logo=pygame)
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/Harsh-Belekar/Shinobi-Saga)
 ![GitHub stars](https://img.shields.io/github/stars/Harsh-Belekar/Shinobi-Saga?style=social)
+![GitHub Release](https://img.shields.io/github/v/release/Harsh-Belekar/Shinobi-Saga?label=Latest%20Release)
+[![Download EXE](https://img.shields.io/badge/Download-.exe-blue?logo=windows)](https://github.com/Harsh-Belekar/Shinobi-Saga/releases/tag/v1.0)
 
 ---
 
@@ -23,6 +25,7 @@
 - [Project Structure](#-project-structure)
 - [Setup & Installation](#-setup--installation)
 - [Build Executable](#-build-executable-windows)
+- [Download](#-download)
 - [Future Plans](#-future-plans)
 - [License](#-license)
 - [Disclaimer](#-disclaimer)
@@ -181,6 +184,17 @@ PyInstaller creates these folders:
 Your .exe will be located in:
 
     /src/dist/ShinobiSaga.exe
+
+---
+
+## 🧾 Download
+
+You can download the standalone executable version (no Python needed) for Windows:
+
+👉 [Download Shinobi-Saga.exe](https://github.com/Harsh-Belekar/Shinobi-Saga/releases/download/v1.0/Shinobi-Saga-Windows.zip)
+_(Hosted in GitHub Releases)_
+
+💡 No installation required! Just extract and run the `.exe` file.
 
 ---
 
