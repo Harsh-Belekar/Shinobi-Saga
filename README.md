@@ -256,3 +256,13 @@ Make sure to follow best practices and test your changes.
 ### 🙌 Built with ❤️ by [Harsh Belekar](https://github.com/Harsh-Belekar)
 
 ---
+
+## 🧠 Author
+
+**👤 Harsh Belekar**  
+📍 Data Analyst | Python | SQL | Power BI | Excel | Data Visualization  
+🔗 [LinkedIn](https://www.linkedin.com/in/harshbelekar) | [GitHub](https://github.com/Harsh-Belekar)
+
+📧 **harshbelekar74@gmail.com**
+
+---
