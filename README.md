@@ -55,6 +55,11 @@
 
 ---
 
+## 🎮 Gameplay Demo
+![Shinobi Saga Gameplay](assets/Screenshots/Shinobi_Saga_GamePlay.gif)
+
+---
+
 ## 📸 Screenshots
 
 ### 🏠 Main Menu
